@@ -1,0 +1,83 @@
+#sobre p {
+    color: var(--text) !important;
+    font-size: 1.2rem;
+}
+
+#sobre div:nth-last-child(2) {
+    padding: 0 3rem 0 3rem !important;
+}
+
+#sobre #imagem {
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transform: scale(1);
+}
+
+#sobre #imagem:hover {
+    transform: scale(1.1);
+}
+
+#sobre #programmer {
+    width: 80% !important;
+}
+
+#sobre #texto {
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+#sobre .icon {
+    box-shadow: 0 0 20px 0px var(--primary-color);
+
+}
+
+#sobre .icon:nth-child(1) {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 82px;
+    border-radius: 15px;
+    margin-top: 1%;
+    margin-left: 15%;
+
+    animation: flutuar-icon 3s ease 1.9s infinite alternate;
+}
+
+#sobre .icon:nth-child(2) {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 82px;
+    border-radius: 15px;
+    margin-top: -5%;
+    margin-left: 53%;
+    z-index: -1;
+
+    animation: flutuar-icon 3s ease 0.6s infinite alternate;
+}
+
+#sobre .icon:nth-child(3) {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 82px;
+    border-radius: 15px;
+    margin-top: 27%;
+    margin-left: 60%;
+
+    padding: 0 !important;
+    animation: flutuar-icon 3s ease 1.2s infinite alternate;
+}
+
+#sobre .icon img {
+    width: 82px !important;
+    height: auto;
+    padding: 10px 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    #sobre #imagem {
+        display: none;
+    }
+    #sobre #texto {
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+}

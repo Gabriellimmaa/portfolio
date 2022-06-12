@@ -1,0 +1,120 @@
+#projetos {
+    padding: 70px 0;
+}
+
+
+#projetos .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#projetos .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 420px;
+    filter: blur(4px);
+    background: var(--primary-color);
+    border-radius: 10px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#projetos .swiper-slide-active {
+    filter: blur(0);
+}
+
+#projetos .swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-mask:
+        linear-gradient(to top, transparent 10%, #fff 50% 100%, transparent 95%);
+    -webkit-mask-size: 110% 110%;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-composite: source-in;
+
+
+    mask:
+        linear-gradient(to top, transparent 10%, #fff 50% 100%, transparent 95%);
+    mask-size: 110% 110%;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-composite: intersect;
+}
+
+#projetos .swiper-slide h1 {
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+#projetos .swiper-slide p {
+    font-size: 14px !important;
+}
+
+#projetos .swiper-slide label {
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+
+    padding-top: 10px;
+}
+
+#projetos .swiper-slide a {
+    color: var(--primary-color-dark);
+    font-weight: 500;
+    border: solid 1x var(--primary-color-light);
+    box-shadow: 0px 0px 6px -2px black;
+    background-color: transparent;
+    transition: .3s;
+}
+
+#projetos .swiper-slide a:hover {
+    color: var(--text);
+    background-color: rgb(61, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px 5px var(--primary-color-dark);
+}
+
+#projetos .swiper-slide .cup {
+    width: 180px;
+    height: 110px;
+    border-radius: 0 0 70px 70px;
+    position: relative;
+    background: var(--cafe);
+    border: 6px solid var(--black);
+    outline: 0;
+    overflow: hidden;
+}
+
+#projetos .swiper-slide .handle {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    right: 22%;
+    top: 30%;
+    border-radius: 0 25px 80px 0;
+    border: 6px solid var(--black);
+}
+
+
+#projetos .swiper-slide .cup::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    /* Center sauare */
+    left: -50%;
+    /* Center sauare */
+    height: 200%;
+    width: 200%;
+    background-color: var(--black);
+    border-radius: 35%;
+    /* Smooth edges to appear like liquid */
+    animation: fillcup 10s ease-in-out infinite;
+}

@@ -1,0 +1,119 @@
+#home {
+    position: relative;
+    height: 100vh;
+    margin-top: -80px;
+}
+
+#curve {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 200px) !important;
+    background-color: var(--primary-color);
+}
+
+#curve .curve {
+    position: absolute;
+    bottom: -200px;
+    height: 200px;
+    width: 100%;
+    transform-origin: top;
+}
+
+#curve .curve img {
+    width: 100%;
+    height: 100%;
+}
+
+.servidor {
+    position: relative;
+    transform: skewY(-15deg);
+    animation: flutuar 4s linear infinite;
+}
+
+.servidor li {
+    position: relative;
+    list-style: none;
+    width: 180px;
+    height: 40px;
+    background-color: var(--black);
+    padding: 15px;
+    transition: .5s;
+}
+
+.servidor li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    transform-origin: right;
+    transform: skewY(45deg);
+}
+
+.servidor li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -99px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(16, 16, 16);
+    transform-origin: bottom;
+    transform: skewx(45deg);
+}
+
+.servidor li:last-child::after {
+    box-shadow: -100px 100px 20px rgba(0, 0, 0, 0.25);
+}
+
+.servidor li:hover {
+    margin: 25px 0;
+}
+
+.servidor li svg:nth-child(3) {
+    font-size: 8px;
+}
+
+.servidor li svg {
+    transition: .5s;
+
+    color: var(--primary-color);
+}
+
+.servidor li:hover svg:nth-child(1) {
+    color: var(--verde);
+}
+
+.servidor li:hover svg:nth-child(2) {
+    color: var(--verde);
+    filter: brightness(0.5);
+}
+
+
+.servidor li:hover svg:nth-child(3) {
+    color: var(--verde);
+    filter: brightness(0.5);
+}
+
+.servidor li:hover svg:nth-child(4) {
+    color: var(--verde);
+    filter: brightness(0.5);
+}
+
+.servidor li:hover svg:nth-child(5) {
+    color: var(--verde);
+}
+
+.servidor li:hover .retangle {
+    background-color: var(--verde);
+}
+
+.servidor li .retangle {
+    height: 5px;
+    width: 60%;
+    margin-left: 20px;
+    background-color: var(--primary-color);
+}

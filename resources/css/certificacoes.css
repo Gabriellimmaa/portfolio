@@ -1,0 +1,112 @@
+/* .swiper-slide-certificados {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 420px;
+    background: var(--primary-color);
+    border-radius: 10px;
+} */
+
+#certificacoes .swiper {
+    margin-bottom: 20px;
+}
+
+#certificacoes .swiper-slide {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#certificacoes .swiper-slide a {
+    color: var(--white);
+    text-decoration: none;
+    transition: .3s;
+}
+
+#certificacoes .swiper-slide a:hover {
+    color: var(--text);
+}
+
+#certificacoes .swiper-slide p {
+    margin-bottom: 30px;
+}
+
+#certificacoes .swiper-certificacoes img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 11rem;
+    min-height: 11rem;
+}
+
+#certificacoes .button-next, .button-prev {
+    position: absolute;
+    margin-top: 150px;
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px 5px;
+}
+
+#certificacoes .button-next:hover, .button-prev:hover {
+    background-color: var(--primary-color);
+}
+
+
+#certificacoes .button-next {
+    margin-left: 570px;
+}
+
+#certificacoes .button-prev {
+    margin-left: -50px;
+}
+
+#certificacoes .button-next svg, .button-prev svg {
+    width: 35px;
+    height: auto;
+    color: var(--primary-color);
+}
+
+#certificacoes .button-next:hover svg, .button-prev:hover svg {
+    color: var(--black);
+
+}
+
+#certificacoes .swiper-pagination {
+    color: var(--primary-color);
+}
+
+
+#certificacoes .swiper-slide a:hover {
+    background-color: none !important;
+    box-shadow: none !important;
+}
+
+#certificacoes .counter span {
+    font-family: "Oswald", arial, sans-serif;
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0 10px;
+    margin-top: -10px !important;
+}
+
+#certificacoes .counter h5 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+}
+
+#certificacoes .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0 !important;
+    left: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    #certificacoes .counter {
+        text-align: center;
+    }
+}

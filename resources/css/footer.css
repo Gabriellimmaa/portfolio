@@ -1,0 +1,59 @@
+#footer {
+    color: var(--black);
+    font-weight: bold;
+    padding: 60px 0 0 0;
+    overflow-x: hidden;
+
+}
+
+#footer span {
+    background-color: var(--primary-color);
+    height: 200px;
+}
+
+
+#footer .wave2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -10px;
+    animation: footer-wave 8s ease-in-out 0.6s infinite alternate;
+}
+
+#footer .wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 80px;
+}
+
+#footer .wave2 .shape-fill {
+    fill: var(--primary-color);
+}
+
+#footer a {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    border: solid 2px transparent;
+    transition: .5s;
+
+}
+
+#footer a:hover img {
+    animation-name: hover-in;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+#footer a img {
+    width: 54px;
+    height: auto;   
+    animation-name: hover-out;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+}

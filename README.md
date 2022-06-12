@@ -23,8 +23,20 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 ---
 ## ✒️ Autor
 
-| [<img src="https://avatars.githubusercontent.com/u/42157830?v=4" width=115><br><sub>Gabriel Lima</sub>](https://github.com/Gabriellimmaa) |
-| :---: | :---: 
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Gabriellimmaa">
+        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Gabriel Lima no GitHub"/><br>
+        <sub>
+          <b>Iuri Silva</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
 
 Obrigado por me ceder seu tempo lendo sobre o meu trabalho.
 

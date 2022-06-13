@@ -2,7 +2,7 @@
 
 ![Resultado final do projeto](resources/img/preview.png)
 
-<h4 align="center"><a href="https://gabriellimmaa.github.io/portfolio/">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://gabriellimmaa.github.io/portfolio/">Clique para visitar o site</a></h4>
 
 ---
 ## 📚 Seções

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta name="title" content="Gabriel Lima - Portfólio">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="description" content="Olá, sou eu Gabriel Lima... Venha ver meu portfólio :)">
+
+    <meta property="og:url" content="https://gabriellimmaa.github.io/portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="💻 Gabriel Lima - Portfólio">
+    <meta property="og:description" content="Olá, sou eu Gabriel Lima... Venha ver meu portfólio :)">
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/attachments/771470980324524043/985661138698109008/preview.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="">
+    <meta property="twitter:url" content="https://gabriellimmaa.github.io/portfolio/">
+    <meta name="twitter:title" content="💻 Gabriel Lima - Portfólio">
+    <meta name="twitter:description" content="Olá, sou eu Gabriel Lima... Venha ver meu portfólio :)">
+    <meta name="twitter:image"
+        content="https://cdn.discordapp.com/attachments/771470980324524043/985661138698109008/preview.png">
+
+    <meta name="theme-color" content="#111111" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="keywords"
+        content="Gabriel Lima, gabriel lima github, gabriel lima, gabriel lima portfólio, Gabriel Lima Portfólio, Gabriel Lima De Moraes, gabriel lima de moraes">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel='icon' href="./resources/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/home.css">
+    <link rel="stylesheet" href="./resources/css/sobre.css">
+    <link rel="stylesheet" href="./resources/css/conhecimentos.css">
+    <link rel="stylesheet" href="./resources/css/projetos.css">
+    <link rel="stylesheet" href="./resources/css/certificacoes.css">
+    <link rel="stylesheet" href="./resources/css/animation.css">
+    <link rel="stylesheet" href="./resources/css/footer.css">
+    <link rel="stylesheet" href="./resources/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./resources/bootstrap/bootstrap.min.css">
+    <title>Gabriel Lima - Portfólio</title>
+</head>
+
+<style>
+    #donwload-cv a {
+        color: var(--white);
+        font-weight: bold;
+        background-color: var(--primary-color);
+        border: solid 2px transparent;
+        transition: .3s;
+    }
+    #donwload-cv a:hover {
+        color: var(--white);
+        background-color: var(--primary-color-dark);
+        border: solid 2px var(--primary-color);
+        cursor: pointer;
+        box-shadow: 0px 0px 15px 5px var(--primary-color-dark);
+    }
+</style>
+
+<body>
+    <div id="starparticle">
+        <canvas id="starfield" width="750" height="500"></canvas>
+    </div>
+    <nav class="navbar sticky-top  navbar-expand">
+        <div class="collapse navbar-collapse justify-content-between grid-layout" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <a class="navbar-brand" href="index.html"><img src="./resources/img/logo.png" style="height: 30px;"></a>
+            </ul>
+            <div class="mobile-menu mx-4" id="mobile-menu" onclick="menuMobile()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="mobile-list" id="mobile-list">
+                <li>
+                    <a class="nav-link" href="index.html#sobre" onclick="hiddenMobile()">Sobre</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index.html#projetos" onclick="hiddenMobile()">Projetos</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index.html#conhecimentos" onclick="hiddenMobile()">Conhecimentos</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index.html#certificacoes" onclick="hiddenMobile()">Certificações</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="index.html#curriculo" onclick="hiddenMobile()">Currículo</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav windows">
+                <li class="nav-item mx-2" onmouseleave="this.style.setProperty('--anim-hover-out', 'hover-out')">
+                    <a class="nav-link" href="index.html#sobre">Sobre</a>
+                </li>
+                <li class="nav-item mx-2" onmouseleave="this.style.setProperty('--anim-hover-out', 'hover-out')">
+                    <a class="nav-link" href="index.html#projetos">Projetos</a>
+                </li>
+                <li class="nav-item mx-2" onmouseleave="this.style.setProperty('--anim-hover-out', 'hover-out')">
+                    <a class="nav-link" href="index.html#conhecimentos">Conhecimentos</a>
+                </li>
+                <li class="nav-item mx-2" onmouseleave="this.style.setProperty('--anim-hover-out', 'hover-out')">
+                    <a class="nav-link" href="index.html#certificacoes">Certificações</a>
+                </li>
+                <li class="nav-item mx-2" onmouseleave="this.style.setProperty('--anim-hover-out', 'hover-out')">
+                    <a class="nav-link" href="curriculo.html">Currículo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="w-100 d-flex justify-content-center my-5">
+                <div class="w-75">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 141.4248%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy"
+                            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFDzrdY40Y&#x2F;view?embed"
+                            allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="donwload-cv" class="w-100 d-flex justify-content-center">
+                <a href="./resources/assets/Curriculo.pdf" target="_blank" class="text-center text-decoration-none px-3 py-2 rounded-2 my-4"><i class="fa-solid fa-download" style="margin-right: 10px;"></i>DOWNLOAD CV</a>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="wave2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <span class="align-items-center flex-column d-flex justify-content-center">
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://github.com/gabriellimmaa" target="_blank"><img
+                            src="./resources/img/logos/github.png" class="img-responsive"></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.linkedin.com/in/gabriel-lima-5263681aa/" target="_blank"><img
+                            src="./resources/img/logos/linkedin.png" class="img-responsive"></a>
+                </div>
+                <div class="col-4">
+                    <a href="mailto:gabriellimamoraes@gmail.com" target="_blank"><img
+                            src="./resources/img/logos/email.png" class="img-responsive"></a>
+                </div>
+            </div>
+            <span style="height: 50px;"></span>
+            <div class="copy-right">© 2022 Gabriel Lima :)</div>
+        </span>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./resources/js/jquery.js"></script>
+    <script src="./resources/bootstrap/bootstrap.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <script src="./resources/fontawesome/all.min.js"></script>
+</body>
+
+</html>

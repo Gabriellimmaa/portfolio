@@ -111,7 +111,7 @@ if (target.length) {
   }, 100));
 }
 
-
+// Contador horas curriculo
 function startCounter() {
   let elemento = document.querySelectorAll('[data-number]');
 
@@ -126,7 +126,7 @@ function startCounter() {
 
 }
 
-
+// Mobile
 function menuMobile() {
   let menu = document.getElementById("mobile-menu");
   let list = document.getElementById("mobile-list");
@@ -146,3 +146,59 @@ function hiddenMobile() {
   let list = document.getElementById("mobile-list");
   list.classList.remove('active');
 }
+
+
+// Fundo estrelado com canvas
+var canvas = document.getElementById("starfield"),
+context = canvas.getContext("2d"),
+stars = 200;
+
+for (var i = 0; i < stars; i++) {
+  x = Math.random() * canvas.offsetWidth;
+  y = Math.random() * canvas.offsetHeight;
+ context.fillStyle = "white";
+  context.fillRect(x,y,1,1);
+}
+
+// Efeito de escrita home
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Desenvolvedor Full-Stack", " HTML | CSS | JS | PHP | Python | MongoDB | SQL", "Desenvolvedor"];
+const typingDelay = 150;
+const erasingDelay = 50;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});

@@ -4,6 +4,24 @@
     margin-top: -80px;
 }
 
+#home h3 span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: piscar-cursor 1s infinite;
+}
+
+#home h3 span.cursor.typing {
+    animation: none;
+}
+
+@keyframes piscar-cursor {
+    0%  { background-color: #ccc; }
+    50% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
 #curve {
     position: absolute;
     top: 0;

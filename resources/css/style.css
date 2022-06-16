@@ -1,6 +1,6 @@
 :root {
     /* VERMELHO */
-    --primary-color: #820000;
+    --primary-color: rgb(130, 0, 0);
     --primary-color-dark: rgb(61, 0, 0);
     --primary-color-dark-2: rgb(150, 0, 0);
     --primary-color-light: rgb(255, 0, 0);
@@ -194,6 +194,7 @@ body::-webkit-scrollbar-thumb {
 #mobile-menu {
     display: none;
 }
+
 .mobile-menu div {
     width: 32px;
     height: 1px;
@@ -237,27 +238,56 @@ header .grid-layout nav .mobile-list {
     opacity: 0;
 }
 
+#starfield {
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    z-index: -1 !important;
+    top: 0px !important;
+    left: 0px !important;
+    pointer-events: none;
+    position: absolute;
+    filter: blur(1px);
+}
+
+#starparticle {
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    z-index: -1 !important;
+    top: 0px !important;
+    left: 0px !important;
+    pointer-events: none;
+    background: linear-gradient(to bottom,rgb(30, 0, 0),rgb(0,0,0));
+
+}
 
 @media screen and (max-width: 992px) {
     .windows {
         display: none !important;
     }
+
     #servidor {
         display: none !important;
     }
+
     #mobile-list {
         display: block;
     }
+
     #mobile-menu {
         display: block;
     }
+
     header .grid-layout nav .mobile-list li {
         margin-left: 0px;
     }
+
     header .grid-layout nav .mobile-list li {
         opacity: 0;
         margin-bottom: 48px;
     }
+
     .mobile-list {
         text-align: center;
         position: absolute;
@@ -272,6 +302,7 @@ header .grid-layout nav .mobile-list {
         margin: 0 !important;
         z-index: -1;
     }
+
     .navbar-brand {
         margin-left: 20px;
     }

@@ -6,28 +6,28 @@
 
 ---
 ## 📚 Seções
-O site é composto por cinco seções:
-- **Home:** Tela de apresentação do site;
-- **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
-- **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para as respectivas aplicações;
-- **Conhecimentos:** Nele apresentamos meus conhecimentos em algumas linguagens com o foco no front-end;
-- **Certificações:** Exibe todos os meus certificados relacionado a cursos ou eventos, também podemos observar algumas informações a mais.
+The website consists of five sections:
+- **Home:** Website presentation screen;
+- **About me:** In this section I have a description telling a little about who I am;
+- **Projects:** It presents some projects developed and with direct link to the respective applications;
+- **Knowledge:** In it we present my knowledge in some languages with a focus on the front-end;
+- **Certifications:** Displays all my certificates related to courses or events, we can also see some more information.
 ---
-## 🛠️ Construído com
-Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+## 🛠️ Developed with
+For the development of this site I used the following technologies:
 - HTML;
 - CSS;
 - JavaScript;
 - Bootstrap;
 - Swiper;
 ---
-## ✒️ Autor
+## ✒️ Author
 
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/Gabriellimmaa">
-        <img src="https://avatars3.githubusercontent.com/u/42157830" width="100px;" alt="Foto do Gabriel Lima no GitHub"/><br>
+        <img src="https://avatars3.githubusercontent.com/u/42157830" width="100px;" alt="Photo by Gabriel Lima on GitHub"/><br>
         <sub>
           <b>Gabriel Lima</b>
         </sub>
@@ -38,6 +38,6 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 ---
 
-Obrigado por me ceder seu tempo lendo sobre o meu trabalho.
+Thank you for taking the time to read about my work.
 
-Qualquer dúvida, crítica ou sugestão entre em <a href="mailto:gabriellimamoraes@gmail.com/">contato</a> pelo meu e-mail
+Any questions, criticisms or suggestions, <a href="mailto:gabriellimamoraes@gmail.com/">contact</a> through my email

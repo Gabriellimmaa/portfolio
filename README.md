@@ -5,7 +5,7 @@
 <h4 align="center"><a href="https://gabriellimmaa.github.io/portfolio/">Clique para visitar o site</a></h4>
 
 ---
-## 📚 Seções
+## 📚 Sections
 The website consists of five sections:
 - **Home:** Website presentation screen;
 - **About me:** In this section I have a description telling a little about who I am;

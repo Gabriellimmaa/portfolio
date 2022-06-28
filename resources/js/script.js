@@ -133,9 +133,11 @@ function menuMobile() {
   if(menu.classList.contains('active')) {
     list.classList.remove('active');
     menu.classList.remove('active');
+    document.body.style.overflow = "auto";
   }else {
     list.classList.add('active');
     menu.classList.add('active');
+    document.body.style.overflow = "hidden";
   }
 }
 
@@ -145,6 +147,8 @@ function hiddenMobile() {
 
   let list = document.getElementById("mobile-list");
   list.classList.remove('active');
+
+  document.body.style.overflow = "auto";
 }
 
 

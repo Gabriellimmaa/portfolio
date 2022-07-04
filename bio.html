@@ -76,7 +76,7 @@
 
     #portfolio:hover {
         background-position: 200px;
-        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        -webkit-box-shadow: 0 0 15px 0 #fff;
         box-shadow: 0 0 20px 0px #e31116;
     }
 
@@ -94,7 +94,7 @@
 
     #linkedin:hover {
         background-position: 200px;
-        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        -webkit-box-shadow: 0 0 15px 0 #fff;
         box-shadow: 0 0 20px 0px #567bf6;
     }
 
@@ -111,7 +111,7 @@
 
     #github:hover {
         background-position: 200px;
-        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        -webkit-box-shadow: 0 0 15px 0 #fff;
         box-shadow: 0 0 20px 0px rgb(172, 172, 172);
     }
 
@@ -125,10 +125,10 @@
         background-size: 1px 200px;
         transition: 1s;
     }
-    
+
     #instagram:hover {
         background-position: 200px;
-        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        -webkit-box-shadow: 0 0 15px 0 #fff;
         box-shadow: 0 0 20px 0px #cc2366;
     }
 
@@ -145,7 +145,7 @@
 
     #discord:hover {
         background-position: 200px;
-        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        -webkit-box-shadow: 0 0 15px 0 #fff;
         box-shadow: 0 0 20px 0px #1f9b95;
     }
 
@@ -160,6 +160,18 @@
             "Linkedin Linkedin Linkedin Linkedin"
             "portfolio portfolio Github Github"
             "Discord Discord Instagram Instagram";
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            gap: 5px 5px;
+            grid-template-areas:
+                "Linkedin Linkedin Linkedin Linkedin"
+                "portfolio portfolio portfolio portfolio"
+                "Github Github Github Github"
+                "Discord Discord Discord Discord"
+                "Instagram Instagram Instagram Instagram";
+        }
     }
 
     .container a {
@@ -208,10 +220,12 @@
         </div>
 
         <div class="container">
-            <a id="linkedin" class="Linkedin text-center py-3" href="https://www.linkedin.com/in/gabriel-lima-5263681aa/" target="_blank">
+            <a id="linkedin" class="Linkedin text-center py-3"
+                href="https://www.linkedin.com/in/gabriel-lima-5263681aa/" target="_blank">
                 <i class="fa-brands fa-linkedin"></i> Linkedin
             </a>
-            <a id="portfolio" class="portfolio text-center py-3 " href="https://gabriellimmaa.github.io/portfolio/" target="_blank">
+            <a id="portfolio" class="portfolio text-center py-3 " href="https://gabriellimmaa.github.io/portfolio/"
+                target="_blank">
                 <i class="fa-solid fa-code"></i> Portfólio
             </a>
             <a id="github" class="Github text-center py-3" href="https://github.com/Gabriellimmaa" target="_blank">
@@ -220,8 +234,9 @@
             <a id="discord" class="Discord text-center py-3" href="" target="_blank">
                 <i class="fa-brands fa-discord"></i> Discord
             </a>
-            <a id="instagram" class="Instagram text-center py-3" href="https://www.instagram.com/gabriel._liima/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>Instagram
+            <a id="instagram" class="Instagram text-center py-3" href="https://www.instagram.com/gabriel._liima/"
+                target="_blank">
+                <i class="fa-brands fa-instagram"></i> Instagram
             </a>
         </div>
     </main>

@@ -51,36 +51,119 @@
 </head>
 
 <style>
+    a {
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+
+    a:hover {
+        cursor: pointer;
+        color: white;
+    }
+
     #portfolio {
-        background: linear-gradient(90deg, #e31116 0%, #ff4d51 100%);
+        background: linear-gradient(58deg, #e31116 8%, #ff4d51 98%);
+
+        -webkit-transition: background 1s ease-out;
+        -moz-transition: background 1s ease-out;
+        -o-transition: background 1s ease-out;
+        transition: background 1s ease-out;
+
+        background-size: 1px 200px;
+        transition: 1s;
+    }
+
+    #portfolio:hover {
+        background-position: 200px;
+        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        box-shadow: 0 0 20px 0px #e31116;
     }
 
     #linkedin {
-        background: linear-gradient(90deg, rgb(86, 123, 246) 0%, rgba(47, 41, 157, 1) 100%);
+        background: linear-gradient(58deg, #567bf6 8%, #2f299d 98%);
+
+        -webkit-transition: background 1s ease-out;
+        -moz-transition: background 1s ease-out;
+        -o-transition: background 1s ease-out;
+        transition: background 1s ease-out;
+
+        background-size: 1px 200px;
+        transition: 1s;
+    }
+
+    #linkedin:hover {
+        background-position: 200px;
+        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        box-shadow: 0 0 20px 0px #567bf6;
     }
 
     #github {
         background: linear-gradient(261.65deg, #202225 0%, #2d2f31 100%);
+        -webkit-transition: background 1s ease-out;
+        -moz-transition: background 1s ease-out;
+        -o-transition: background 1s ease-out;
+        transition: background 1s ease-out;
+
+        background-size: 1px 200px;
+        transition: 1s;
+    }
+
+    #github:hover {
+        background-position: 200px;
+        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        box-shadow: 0 0 20px 0px rgb(172, 172, 172);
     }
 
     #instagram {
         background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        -webkit-transition: background 1s ease-out;
+        -moz-transition: background 1s ease-out;
+        -o-transition: background 1s ease-out;
+        transition: background 1s ease-out;
+
+        background-size: 1px 200px;
+        transition: 1s;
+    }
+    
+    #instagram:hover {
+        background-position: 200px;
+        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        box-shadow: 0 0 20px 0px #cc2366;
     }
 
     #discord {
         background: linear-gradient(58deg, #1f9b95 8%, #3983b4 98%);
+        -webkit-transition: background 1s ease-out;
+        -moz-transition: background 1s ease-out;
+        -o-transition: background 1s ease-out;
+        transition: background 1s ease-out;
+
+        background-size: 1px 200px;
+        transition: 1s;
+    }
+
+    #discord:hover {
+        background-position: 200px;
+        -webkit-box-shadow: 0 0 15px 0 #fff; 
+        box-shadow: 0 0 20px 0px #1f9b95;
     }
 
     .container {
         color: white;
+        font-size: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 10px 10px;
+        gap: 15px 15px;
         grid-template-areas:
             "Linkedin Linkedin Linkedin Linkedin"
             "portfolio portfolio Github Github"
             "Discord Discord Instagram Instagram";
+    }
+
+    .container a {
+        margin: 5px 5px;
     }
 
     .Linkedin {
@@ -113,14 +196,33 @@
     <div id="starparticle">
         <canvas id="starfield" width="750" height="500"></canvas>
     </div>
-    <main>
-        <div class="container" style="max-width: 600px; margin: 32px auto;">
-            <div id="linkedin" class="Linkedin text-center py-2"><a><i class="fa-brands fa-linkedin"></i> Linkedin</a></div>
-            <div id="portfolio" class="portfolio text-center py-2"><a><i class="fa-solid fa-code"></i> Portfólio</a></div>
-            <div id="github" class="Github text-center py-2"><a><i class="fa-brands fa-github"></i> Github</a></div>
-            <div id="discord" class="Discord text-center py-2"><a><i class="fa-brands fa-discord"></i> Discord</a></div>
-            <div id="instagram" class="Instagram text-center py-2"><a><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <main style="max-width: 800px; margin: 32px auto;">
+        <div class="row mb-5">
+            <div class="col-12 d-flex justify-content-center">
+                <img class="rounded-circle w-25 " src="https://github.com/Gabriellimmaa.png">
             </div>
+            <div class="text-center">
+                <label class="col-12" style="color: white">Olá, me chamo Gabriel Lima :)</label>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <a id="linkedin" class="Linkedin text-center py-3" href="https://www.linkedin.com/in/gabriel-lima-5263681aa/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> Linkedin
+            </a>
+            <a id="portfolio" class="portfolio text-center py-3 " href="https://gabriellimmaa.github.io/portfolio/" target="_blank">
+                <i class="fa-solid fa-code"></i> Portfólio
+            </a>
+            <a id="github" class="Github text-center py-3" href="https://github.com/Gabriellimmaa" target="_blank">
+                <i class="fa-brands fa-github"></i> Github
+            </a>
+            <a id="discord" class="Discord text-center py-3" href="" target="_blank">
+                <i class="fa-brands fa-discord"></i> Discord
+            </a>
+            <a id="instagram" class="Instagram text-center py-3" href="https://www.instagram.com/gabriel._liima/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>Instagram
+            </a>
         </div>
     </main>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

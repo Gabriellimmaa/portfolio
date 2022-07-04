@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta name="title" content="Gabriel Lima - Portfólio">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="description" content="Olá, sou eu Gabriel Lima... Venha ver meu portfólio :)">
+
+    <meta property="og:url" content="https://gabriellimmaa.github.io/portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="💻 Gabriel Lima - Portfólio">
+    <meta property="og:description" content="Olá, sou eu Gabriel Lima... Venha ver meu portfólio :)">
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/attachments/771470980324524043/985661138698109008/preview.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="">
+    <meta property="twitter:url" content="https://gabriellimmaa.github.io/portfolio/">
+    <meta name="twitter:title" content="💻 Gabriel Lima - Portfólio">
+    <meta name="twitter:description" content="Olá, sou eu Gabriel Lima... Venha ver meu portfólio :)">
+    <meta name="twitter:image"
+        content="https://cdn.discordapp.com/attachments/771470980324524043/985661138698109008/preview.png">
+
+    <meta name="theme-color" content="#111111" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="keywords"
+        content="Gabriel Lima, gabriel lima github, gabriel lima, gabriel lima portfólio, Gabriel Lima Portfólio, Gabriel Lima De Moraes, gabriel lima de moraes">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel='icon' href="./resources/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/home.css">
+    <link rel="stylesheet" href="./resources/css/sobre.css">
+    <link rel="stylesheet" href="./resources/css/conhecimentos.css">
+    <link rel="stylesheet" href="./resources/css/projetos.css">
+    <link rel="stylesheet" href="./resources/css/certificacoes.css">
+    <link rel="stylesheet" href="./resources/css/animation.css">
+    <link rel="stylesheet" href="./resources/css/footer.css">
+    <link rel="stylesheet" href="./resources/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./resources/bootstrap/bootstrap.min.css">
+    <title>Gabriel Lima - Portfólio</title>
+</head>
+
+<style>
+    #portfolio {
+        background: linear-gradient(90deg, #e31116 0%, #ff4d51 100%);
+    }
+
+    #linkedin {
+        background: linear-gradient(90deg, rgb(86, 123, 246) 0%, rgba(47, 41, 157, 1) 100%);
+    }
+
+    #github {
+        background: linear-gradient(261.65deg, #202225 0%, #2d2f31 100%);
+    }
+
+    #instagram {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+
+    #discord {
+        background: linear-gradient(58deg, #1f9b95 8%, #3983b4 98%);
+    }
+
+    .container {
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            "Linkedin Linkedin Linkedin Linkedin"
+            "portfolio portfolio Github Github"
+            "Discord Discord Instagram Instagram";
+    }
+
+    .Linkedin {
+        border-radius: 5px;
+        grid-area: Linkedin;
+    }
+
+    .portfolio {
+        border-radius: 5px;
+        grid-area: portfolio;
+    }
+
+    .Github {
+        border-radius: 5px;
+        grid-area: Github;
+    }
+
+    .Discord {
+        border-radius: 5px;
+        grid-area: Discord;
+    }
+
+    .Instagram {
+        border-radius: 5px;
+        grid-area: Instagram;
+    }
+</style>
+
+<body id="body">
+    <div id="starparticle">
+        <canvas id="starfield" width="750" height="500"></canvas>
+    </div>
+    <main>
+        <div class="container" style="max-width: 600px; margin: 32px auto;">
+            <div id="linkedin" class="Linkedin text-center py-2"><a><i class="fa-brands fa-linkedin"></i> Linkedin</a></div>
+            <div id="portfolio" class="portfolio text-center py-2"><a><i class="fa-solid fa-code"></i> Portfólio</a></div>
+            <div id="github" class="Github text-center py-2"><a><i class="fa-brands fa-github"></i> Github</a></div>
+            <div id="discord" class="Discord text-center py-2"><a><i class="fa-brands fa-discord"></i> Discord</a></div>
+            <div id="instagram" class="Instagram text-center py-2"><a><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./resources/js/jquery.js"></script>
+    <script src="./resources/bootstrap/bootstrap.min.js"></script>
+    <script src="./resources/js/script.js"></script>
+    <script src="./resources/fontawesome/all.min.js"></script>
+</body>
+
+</html>

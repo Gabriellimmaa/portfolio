@@ -5,23 +5,23 @@
 <h4 align="center"><a href="https://gabriellimmaa.github.io/portfolio/">Clique para visitar o site</a></h4>
 
 ---
-## 📚 Sections
-The website consists of five sections:
-- **Home:** Website presentation screen;
-- **About me:** In this section I have a description telling a little about who I am;
-- **Projects:** It presents some projects developed and with direct link to the respective applications;
-- **Knowledge:** In it we present my knowledge in some languages with a focus on the front-end;
-- **Certifications:** Displays all my certificates related to courses or events, we can also see some more information.
+## 📚 Seções
+O site é composto por cinco seções:
+- **Início:** Tela de apresentação do site;
+- **Sobre mim:** Nesta seção tenho uma descrição contando um pouco sobre quem sou;
+- **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para as respectivas aplicações;
+- **Conhecimento:** Nele apresentamos meus conhecimentos em alguns idiomas com foco no front-end;
+- **Certificações:** Exibe todos os meus certificados relacionados a cursos ou eventos, também podemos ver mais algumas informações.
 ---
-## 🛠️ Developed with
-For the development of this site I used the following technologies:
+## 🛠️ Desenvolvido com
+Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - HTML;
 - CSS;
 - JavaScript;
 - Bootstrap;
 - Swiper;
 ---
-## ✒️ Author
+## ✒️ Autor
 
 <table>
   <tr>
@@ -38,6 +38,6 @@ For the development of this site I used the following technologies:
 
 ---
 
-Thank you for taking the time to read about my work.
+Obrigado por me ceder seu tempo lendo sobre o meu trabalho.
 
-Any questions, criticisms or suggestions, <a href="mailto:gabriellimamoraes@gmail.com/">contact</a> through my email
+Qualquer dúvida, crítica ou sugestão entre em, <a href="mailto:gabriellimamoraes@gmail.com/">contact</a> pelo meu e-mail
